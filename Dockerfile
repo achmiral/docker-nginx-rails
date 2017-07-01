@@ -5,6 +5,9 @@ MAINTAINER Miral Achmed <miral.achmed@gmail.com>
 
 RUN rm -f /etc/nginx/conf.d/*
 
+RUN addgroup -g 1000 -S www-data \
+ && adduser -u 1000 -D -S -G www-data www-data
+
 COPY nginx.conf /etc/nginx/nginx.conf
 # COPY app.conf /etc/nginx/conf.d/app.conf
  
