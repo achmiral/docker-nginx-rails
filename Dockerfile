@@ -5,7 +5,7 @@ MAINTAINER Miral Achmed <miral.achmed@gmail.com>
 
 RUN rm -f /etc/nginx/conf.d/*
 
-# COPY nginx.conf /etc/nginx/nginx.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 # COPY app.conf /etc/nginx/conf.d/app.conf
  
 EXPOSE 80 443
